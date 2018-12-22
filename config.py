@@ -1,0 +1,7 @@
+import os
+DB_URL = os.getenv("MONGODB_URL", 'mongodb://localhost:27017/docstore')
+MAX_FILE_SIZE = 8 * 1024 * 1024
+MAX_FILENUM_ALLOWED = 256
+PID_LENGTH = 32
+HMAC_KEY = "eca47a5012a96e5d448805b452ccaea7"
+ACCESS_KEY = "b869259e7b057c7a2b56533c1a009843"
