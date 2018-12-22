@@ -10,6 +10,8 @@ services:
             - 80:5000
         environment:
             MONGODB_URL: mongodb://mongo_server:27017/docstore
+            ACCESS_KEY: eca47a50d2a16ead448805b452ccaea7
+            HMAC_KEY: eca47a50d2a16ead448805b452ccae12
     mongo_server:
       restart: always
       image: mongo
