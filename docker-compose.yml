@@ -1,0 +1,21 @@
+version: '3.3'
+services:
+    docstore-web:
+        restart: always
+        image: swiftlatex/docstore
+        container_name: docstore
+        depends_on:
+            - mongo_server
+        ports:
+            - 80:5000
+        environment:
+            MONGODB_URL: mongodb://mongo_server:27017/docstore
+    mongo_server:
+      restart: always
+      image: mongo
+      container_name: mongo_server
+      expose:
+      - 27017
+      volumes:
+      - ~/mongo_data:/data/db
+

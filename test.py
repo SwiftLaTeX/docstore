@@ -83,4 +83,4 @@ class ProxyFilesystem(object):
 
 # ProxyFilesystem().write("abcdabcdabcdabcdabcdabcdabcdabcd", "sifjasiodfj/ddd/helloworld.txt", open("config.py", "rb"))
 # ProxyFilesystem().rename("abcdabcdabcdabcdabcdabcdabcdabcd", "sifjasiodfj/ddd",  "sifjasiodfj/ddd1")
-print(ProxyFilesystem().read("abcdabcdabcdabcdabcdabcdabcdabcd", "sifjasiodfj/ddd1/helloworld.txt", "1545604121", "8acb3a0884688f19d57d80f222c664b4b6b8eb4e20553cf56a646baec42b457c"))
+# print(ProxyFilesystem().read("abcdabcdabcdabcdabcdabcdabcdabcd", "sifjasiodfj/ddd1/helloworld.txt", "1545604121", "8acb3a0884688f19d57d80f222c664b4b6b8eb4e20553cf56a646baec42b457c"))
