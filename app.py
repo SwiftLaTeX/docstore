@@ -48,19 +48,20 @@ def main_entry(path):
 
 
 def download_file(pid, url):
-    expire_time = request.args.get("expire", "")
-    signed = request.args.get("signed", "")
-    if expire_time == "":
-        return jsonify({'result': 'failed', 'reason': 'incorrect expire time'}), 500
-
-    if string_utils.hash_with_prefix(expire_time, config.HMAC_KEY) != signed:
-        return jsonify(
-            {'result': 'failed', 'reason': 'unable to verify signature'}), 500
-
-    if abs(int(expire_time) - time.time()) > 3600:
+    if not verify_access_key():
+        expire_time = request.args.get("expire", "")
+        signed = request.args.get("signed", "")
         if expire_time == "":
-            return jsonify({'result': 'failed',
-                            'reason': 'file expired'}), 500
+            return jsonify({'result': 'failed', 'reason': 'incorrect expire time'}), 500
+
+        if string_utils.hash_with_prefix(expire_time, config.HMAC_KEY) != signed:
+            return jsonify(
+                {'result': 'failed', 'reason': 'unable to verify signature'}), 500
+
+        if abs(int(expire_time) - time.time()) > 3600:
+            if expire_time == "":
+                return jsonify({'result': 'failed',
+                                'reason': 'file expired'}), 500
 
     data = filesystem.read(pid, url)
     if data is None:

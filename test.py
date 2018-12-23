@@ -3,8 +3,8 @@ import config
 class ProxyFilesystem(object):
 
     def __init__(self):
-        self.remote_endpoint = "http://127.0.0.1:5000"
-        self.s_token = config.ACCESS_KEY
+        self.remote_endpoint = ""
+        self.s_token = ""
 
     def readdir(self, pid, dirname = ""):
         durl = self.remote_endpoint + "/" + pid + "/" + dirname
@@ -81,6 +81,6 @@ class ProxyFilesystem(object):
     def read(self, pid, path, exp, sign):
         return "%s/%s/%s?expire=%s&signed=%s" % (self.remote_endpoint, pid, path, exp, sign)
 
-# ProxyFilesystem().write("abcdabcdabcdabcdabcdabcdabcdabcd", "sifjasiodfj/ddd/helloworld.txt", open("config.py", "rb"))
-# ProxyFilesystem().rename("abcdabcdabcdabcdabcdabcdabcdabcd", "sifjasiodfj/ddd",  "sifjasiodfj/ddd1")
-# print(ProxyFilesystem().read("abcdabcdabcdabcdabcdabcdabcdabcd", "sifjasiodfj/ddd1/helloworld.txt", "1545604121", "8acb3a0884688f19d57d80f222c664b4b6b8eb4e20553cf56a646baec42b457c"))
+ProxyFilesystem().write("abcdabcdabcdabcdabcdabcdabcdabcd", "sifjasiodfjhelloworld.txt", open("config.py", "rb"))
+print(ProxyFilesystem().readdir("abcdabcdabcdabcdabcdabcdabcdabcd", ""))
+print(ProxyFilesystem().read("abcdabcdabcdabcdabcdabcdabcdabcd", "sifjasiodfjhelloworld.txt", "1545606479", "8ab22851a20e607beba5083348b92884968ec51da416426fe5e63c2046274a2b"))
