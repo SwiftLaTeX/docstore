@@ -13,6 +13,7 @@ class MongoDBFileSystem(object):
         self.create_db_index()
 
 
+
     def file_count(self):
         return self.filemeta_db.count()
 
@@ -20,6 +21,7 @@ class MongoDBFileSystem(object):
     def create_db_index(self):
         if 'pid' not in self.filemeta_db.index_information():
             self.filemeta_db.create_index([('pid', 1)])
+
 
 
     def readtree(self, pid, dirbase = ""):
@@ -36,10 +38,14 @@ class MongoDBFileSystem(object):
             else:
                 shownFile.append(fileRecord)
 
+
+        currentTimeStamp = int(time.time())
+        remainSecond = currentTimeStamp % 7200
+
         for item in shownFile:
             if item['type'] == "file":
-                item['expire'] = int(time.time()) + 86400
-                item['signed'] = string_utils.hash_with_prefix(item['expire'], config.HMAC_KEY)
+                item['expire'] = currentTimeStamp - remainSecond + 86400 # One day Access Grace
+                item['signed'] = string_utils.hash_with_prefix(item['pid'] + item['filename']+ item['expire'], config.HMAC_KEY)
         print(shownFile)
         return shownFile
 

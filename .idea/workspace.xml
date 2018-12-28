@@ -4,6 +4,7 @@
     <list default="true" id="b1fc1a3c-aff1-41a4-a567-50aa2f588331" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mongofs.py" beforeDir="false" afterPath="$PROJECT_DIR$/mongofs.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/string_utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/string_utils.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -14,17 +15,17 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/docstore$crud_utils.coverage" NAME="crud_utils Coverage Results" MODIFIED="1545520099729" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/docstore$app.coverage" NAME="app Coverage Results" MODIFIED="1545517377842" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/docstore$string_utils.coverage" NAME="string_utils Coverage Results" MODIFIED="1545514549302" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/docstore$app.coverage" NAME="app Coverage Results" MODIFIED="1546034100924" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/docstore$string_utils.coverage" NAME="string_utils Coverage Results" MODIFIED="1546033726408" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="FUSProjectUsageTrigger">
     <session id="1818302729">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="3" />
-          <entry key="project.open.time.0" value="3" />
+          <entry key="project.closed" value="4" />
+          <entry key="project.open.time.0" value="4" />
           <entry key="project.open.time.8" value="1" />
-          <entry key="project.opened" value="4" />
+          <entry key="project.opened" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -49,7 +50,7 @@
           <entry key="Dockerfile" value="4" />
           <entry key="dummy" value="6" />
           <entry key="gitignore" value="16" />
-          <entry key="py" value="4980" />
+          <entry key="py" value="5374" />
           <entry key="txt" value="29" />
           <entry key="yml" value="60" />
         </counts>
@@ -58,7 +59,7 @@
         <counts>
           <entry key="Dockerfile" value="4" />
           <entry key="PLAIN_TEXT" value="51" />
-          <entry key="Python" value="4980" />
+          <entry key="Python" value="5374" />
           <entry key="YAML" value="60" />
         </counts>
       </usages-collector>
@@ -66,17 +67,17 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="24" column="25" selection-start-line="24" selection-start-column="25" selection-end-line="24" selection-end-column="25" />
+            <state relative-caret-position="256">
+              <caret line="52" column="32" lean-forward="true" selection-start-line="52" selection-start-column="32" selection-end-line="52" selection-end-column="32" />
               <folding>
                 <element signature="e#0#52#0" expanded="true" />
-                <marker date="1545965048331" expanded="true" signature="602:684" ph="..." />
-                <marker date="1545965048331" expanded="true" signature="1530:1531" ph="..." />
-                <marker date="1545965048331" expanded="true" signature="1530:1539" ph="..." />
-                <marker date="1545965048331" expanded="true" signature="2494:3275" ph="..." />
+                <marker date="1546034057943" expanded="true" signature="602:684" ph="..." />
+                <marker date="1546034057943" expanded="true" signature="1530:1531" ph="..." />
+                <marker date="1546034057943" expanded="true" signature="1530:1539" ph="..." />
+                <marker date="1546034057943" expanded="true" signature="2506:3287" ph="..." />
               </folding>
             </state>
           </provider>
@@ -126,11 +127,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mongofs.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="570">
-              <caret line="38" column="30" lean-forward="true" selection-start-line="38" selection-start-column="30" selection-end-line="38" selection-end-column="30" />
+            <state relative-caret-position="-1092">
+              <caret line="47" column="109" selection-start-line="47" selection-start-column="109" selection-end-line="47" selection-end-column="109" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
-                <marker date="1545517374805" expanded="true" signature="371:418" ph="..." />
+                <marker date="1546033978246" expanded="true" signature="372:419" ph="..." />
               </folding>
             </state>
           </provider>
@@ -139,20 +140,21 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="30" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="30" />
+            <state relative-caret-position="90">
+              <caret line="6" column="17" lean-forward="true" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/string_utils.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="19" lean-forward="true" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
+            <state relative-caret-position="75">
+              <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
-                <marker date="1545964989244" expanded="true" signature="689:694" ph="..." />
+                <marker date="1546034080038" expanded="true" signature="689:694" ph="..." />
+                <marker date="1546034080038" expanded="true" signature="1223:1228" ph="..." />
               </folding>
             </state>
           </provider>
@@ -202,7 +204,6 @@
       <list>
         <option value="$PROJECT_DIR$/WSGI.py" />
         <option value="$PROJECT_DIR$/curd_utils.py" />
-        <option value="$PROJECT_DIR$/mongofs.py" />
         <option value="$PROJECT_DIR$/crud_utils.py" />
         <option value="$PROJECT_DIR$/Dockerfile" />
         <option value="$PROJECT_DIR$/requirements.txt" />
@@ -210,8 +211,9 @@
         <option value="$PROJECT_DIR$/config.py" />
         <option value="$PROJECT_DIR$/docker-compose.yml" />
         <option value="$PROJECT_DIR$/test.py" />
-        <option value="$PROJECT_DIR$/string_utils.py" />
+        <option value="$PROJECT_DIR$/mongofs.py" />
         <option value="$PROJECT_DIR$/app.py" />
+        <option value="$PROJECT_DIR$/string_utils.py" />
       </list>
     </option>
   </component>
@@ -222,10 +224,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="x" value="1440" />
-    <option name="y" value="-114" />
+    <option name="x" value="1485" />
+    <option name="y" value="-15" />
     <option name="width" value="1680" />
-    <option name="height" value="1050" />
+    <option name="height" value="938" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -233,7 +235,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -245,6 +246,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -265,7 +267,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.crud_utils">
+  <component name="RunManager" selected="Python.app">
     <configuration name="app" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="docstore" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -355,9 +357,9 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.crud_utils" />
         <item itemvalue="Python.app" />
         <item itemvalue="Python.string_utils" />
+        <item itemvalue="Python.crud_utils" />
       </list>
     </recent_temporary>
   </component>
@@ -378,12 +380,12 @@
     <frame x="1440" y="-114" width="1680" height="1050" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22039072" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22283272" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32959184" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32959184" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -407,6 +409,17 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/string_utils.py</url>
+          <line>52</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/docker-compose.yml">
@@ -442,24 +455,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mongofs.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="38" column="30" lean-forward="true" selection-start-line="38" selection-start-column="30" selection-end-line="38" selection-end-column="30" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-            <marker date="1545517374805" expanded="true" signature="371:418" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="30" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/WSGI.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -477,27 +472,46 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/string_utils.py">
+    <entry file="file://$PROJECT_DIR$/mongofs.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="19" lean-forward="true" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
+        <state relative-caret-position="-1092">
+          <caret line="47" column="109" selection-start-line="47" selection-start-column="109" selection-end-line="47" selection-end-column="109" />
           <folding>
-            <element signature="e#0#13#0" expanded="true" />
-            <marker date="1545964989244" expanded="true" signature="689:694" ph="..." />
+            <element signature="e#0#9#0" expanded="true" />
+            <marker date="1546033978246" expanded="true" signature="372:419" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="17" lean-forward="true" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="25" selection-start-line="24" selection-start-column="25" selection-end-line="24" selection-end-column="25" />
+        <state relative-caret-position="256">
+          <caret line="52" column="32" lean-forward="true" selection-start-line="52" selection-start-column="32" selection-end-line="52" selection-end-column="32" />
           <folding>
             <element signature="e#0#52#0" expanded="true" />
-            <marker date="1545965048331" expanded="true" signature="602:684" ph="..." />
-            <marker date="1545965048331" expanded="true" signature="1530:1531" ph="..." />
-            <marker date="1545965048331" expanded="true" signature="1530:1539" ph="..." />
-            <marker date="1545965048331" expanded="true" signature="2494:3275" ph="..." />
+            <marker date="1546034057943" expanded="true" signature="602:684" ph="..." />
+            <marker date="1546034057943" expanded="true" signature="1530:1531" ph="..." />
+            <marker date="1546034057943" expanded="true" signature="1530:1539" ph="..." />
+            <marker date="1546034057943" expanded="true" signature="2506:3287" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/string_utils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+            <marker date="1546034080038" expanded="true" signature="689:694" ph="..." />
+            <marker date="1546034080038" expanded="true" signature="1223:1228" ph="..." />
           </folding>
         </state>
       </provider>

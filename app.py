@@ -22,7 +22,7 @@ def verify_access_key():
 
 @app.route('/')
 def index():
-    return "Docstore v0.2. Happily storing %d files." % filesystem.file_count()
+    return "Docstore v0.3. Happily storing %d files." % filesystem.file_count()
 
 @app.route('/<path:path>', methods=["GET", "POST", "DELETE", "PUT"])
 def main_entry(path):
@@ -54,7 +54,7 @@ def download_file(pid, url):
         if expire_time == "":
             return jsonify({'result': 'failed', 'reason': 'incorrect expire time'}), 500
 
-        if string_utils.hash_with_prefix(expire_time, config.HMAC_KEY) != signed:
+        if string_utils.hash_with_prefix(pid + url + expire_time, config.HMAC_KEY) != signed:
             return jsonify(
                 {'result': 'failed', 'reason': 'unable to verify signature'}), 500
 
