@@ -22,7 +22,7 @@ def verify_access_key():
 
 @app.route('/')
 def index():
-    return "Docstore v0.1. Happily storing %d files." % filesystem.file_count()
+    return "Docstore v0.2. Happily storing %d files." % filesystem.file_count()
 
 @app.route('/<path:path>', methods=["GET", "POST", "DELETE", "PUT"])
 def main_entry(path):

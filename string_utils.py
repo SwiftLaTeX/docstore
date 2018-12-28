@@ -4,8 +4,8 @@ import hashlib
 import re
 import config
 
-def hash_sha256(str):
-    hasher = hashlib.sha256()
+def hash_md5(str):
+    hasher = hashlib.md5()
     hasher.update(str.encode('utf-8'))
     password = hasher.hexdigest()
     return password
@@ -23,7 +23,7 @@ def filename_character_check(name):
 
 def hash_with_prefix(str, prefix):
     tmp_secret = "%s-%s-%s" % (prefix, str, prefix)
-    return hash_sha256(tmp_secret)
+    return hash_md5(tmp_secret)
 
 
 def is_valid_pidurl(name):
