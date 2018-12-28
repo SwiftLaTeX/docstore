@@ -45,7 +45,7 @@ class MongoDBFileSystem(object):
         for item in shownFile:
             if item['type'] == "file":
                 item['expire'] = currentTimeStamp - remainSecond + 86400 # One day Access Grace
-                item['signed'] = string_utils.hash_with_prefix(item['pid'] + item['filename']+ item['expire'], config.HMAC_KEY)
+                item['signed'] = string_utils.hash_with_prefix(item['pid'] + item['filename']+ str(item['expire']), config.HMAC_KEY)
         print(shownFile)
         return shownFile
 
